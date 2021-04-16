@@ -1,0 +1,24 @@
+{
+	"FileVersion": 3,
+	"Version": 1,
+	"VersionName": "1.0",
+	"FriendlyName": "ExternalEditTextInputs",
+	"Description": "Modify any UE Editor text input widget text in external editor",
+	"Category": "Other",
+	"CreatedBy": "Adam Wolski",
+	"CreatedByURL": "",
+	"DocsURL": "",
+	"MarketplaceURL": "",
+	"SupportURL": "",
+	"CanContainContent": false,
+	"IsBetaVersion": false,
+	"IsExperimentalVersion": false,
+	"Installed": false,
+	"Modules": [
+		{
+			"Name": "ExternalEditTextInputs",
+			"Type": "Editor",
+			"LoadingPhase": "Default"
+		}
+	]
+}
