@@ -37,8 +37,8 @@ class FExternalEditCommands final : public TCommands<FExternalEditCommands>
 public:
 	FExternalEditCommands()
 		: TCommands<FExternalEditCommands>(
-			"AdditionalWindowCommands",
-			FText::FromString(TEXT("Additional Window Commands")),
+			"ExternalEditCommands",
+			LOCTEXT("CommandsName", "External Edit Text Inputs"),
 			NAME_None,
 			FEditorStyle::GetStyleSetName())
 	{
