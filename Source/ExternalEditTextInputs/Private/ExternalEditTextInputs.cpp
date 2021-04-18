@@ -191,6 +191,11 @@ void OpenInExternalEditor()
 
 void FExternalEditTextInputsModule::StartupModule()
 {
+	if (IsRunningCommandlet())
+	{
+		return;
+	}
+
 	FModuleManager::GetModuleChecked<ISettingsModule>("Settings")
 		.RegisterSettings(
 			"Editor",
@@ -213,6 +218,11 @@ void FExternalEditTextInputsModule::StartupModule()
 
 void FExternalEditTextInputsModule::ShutdownModule()
 {
+	if (IsRunningCommandlet())
+	{
+		return;
+	}
+
 	FModuleManager::GetModuleChecked<ISettingsModule>("Settings")
 		.UnregisterSettings("Editor", "Plugins", "ExternalEditTextInputs");
 
