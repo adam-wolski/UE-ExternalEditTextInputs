@@ -4,7 +4,7 @@
 
 #include "ExternalEditTextInputsSettings.generated.h"
 
-UCLASS(config = Plugins, DefaultConfig)
+UCLASS(Config = Plugins)
 class UExternalEditTextInputsSettings final : public UObject
 {
 	GENERATED_BODY()
