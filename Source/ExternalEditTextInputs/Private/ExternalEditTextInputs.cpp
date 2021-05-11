@@ -94,8 +94,8 @@ void StartExternalEditor(
 
 TOptional<FString> CreateExternalEditFile(const FString& CurrentContents)
 {
-	const FString FilePath =
-		FPaths::Combine(FPaths::ProjectSavedDir(), TEXT("ExternalTextEdit"), FGuid::NewGuid().ToString());
+	const FString FilePath = FPaths::Combine(
+		FPaths::ProjectSavedDir(), TEXT("ExternalTextEdit"), FGuid::NewGuid().ToString() + TEXT(".hlsl"));
 
 	if (!FFileHelper::SaveStringToFile(CurrentContents, *FilePath, FFileHelper::EEncodingOptions::ForceUTF8))
 	{
